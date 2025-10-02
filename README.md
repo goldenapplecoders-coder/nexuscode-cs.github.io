@@ -8,7 +8,7 @@ description: Elite software development and consulting services
 
 > *Where Software Excellence Meets Innovation*
 
-![Company Banner](https://via.placeholder.com/800x200/2c3e50/ffffff?text=CodeCraft+Masters)
+![Company Banner](ban.svg)
 
 ## 🎯 About Us
 
