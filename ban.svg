@@ -1,0 +1,108 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <!-- Gradient Definitions -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f39c12;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow Effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bgGradient)" />
+  
+  <!-- Circuit Board Pattern -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <!-- Horizontal Lines -->
+    <path d="M 0 50 L 800 50" />
+    <path d="M 0 100 L 800 100" />
+    <path d="M 0 150 L 800 150" />
+    
+    <!-- Vertical Lines -->
+    <path d="M 100 0 L 100 200" />
+    <path d="M 300 0 L 300 200" />
+    <path d="M 500 0 L 500 200" />
+    <path d="M 700 0 L 700 200" />
+    
+    <!-- Nodes -->
+    <circle cx="100" cy="50" r="3" fill="#ffffff" />
+    <circle cx="300" cy="100" r="3" fill="#ffffff" />
+    <circle cx="500" cy="150" r="3" fill="#ffffff" />
+    <circle cx="700" cy="50" r="3" fill="#ffffff" />
+  </g>
+  
+  <!-- Binary Code Stream -->
+  <g fill="#ffffff" opacity="0.2" font-family="monospace" font-size="12">
+    <text x="50" y="30">1010 1101 0011 0101</text>
+    <text x="450" y="180">0101 1010 1100 0011</text>
+    <text x="200" y="120">1110 0101 1001 0110</text>
+    <text x="600" y="80">0011 1100 1010 0101</text>
+  </g>
+  
+  <!-- Main Logo Container -->
+  <g transform="translate(400, 100)">
+    <!-- Code Brackets -->
+    <g fill="none" stroke="url(#accentGradient)" stroke-width="3" stroke-linecap="round">
+      <path d="M -180 -30 L -160 -30 L -160 30 L -180 30" />
+      <path d="M 180 -30 L 160 -30 L 160 30 L 180 30" />
+    </g>
+    
+    <!-- Central Gear -->
+    <g fill="url(#accentGradient)" filter="url(#glow)">
+      <circle cx="0" cy="0" r="25" opacity="0.8" />
+      <!-- Gear Teeth -->
+      <path d="M 0 -35 L 5 -30 L 5 -20 L -5 -20 L -5 -30 Z" />
+      <path d="M 35 0 L 30 5 L 20 5 L 20 -5 L 30 -5 Z" />
+      <path d="M 0 35 L -5 30 L -5 20 L 5 20 L 5 30 Z" />
+      <path d="M -35 0 L -30 -5 L -20 -5 L -20 5 L -30 5 Z" />
+      <!-- Diagonal Teeth -->
+      <path d="M 25 -25 L 28 -22 L 22 -16 L 16 -22 Z" />
+      <path d="M 25 25 L 22 28 L 16 22 L 22 16 Z" />
+      <path d="M -25 25 L -28 22 L -22 16 L -16 22 Z" />
+      <path d="M -25 -25 L -22 -28 L -16 -22 L -22 -16 Z" />
+    </g>
+    
+    <!-- Inner Circle -->
+    <circle cx="0" cy="0" r="15" fill="#2c3e50" stroke="url(#accentGradient)" stroke-width="2" />
+  </g>
+  
+  <!-- Company Name -->
+  <g text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold">
+    <!-- Main Title with Shadow -->
+    <text x="400" y="130" font-size="36" fill="#ecf0f1" filter="url(#glow)">
+      CodeCraft Masters
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="400" y="165" font-size="18" fill="#bdc3c7" font-weight="normal">
+      Professional Software Solutions
+    </text>
+  </g>
+  
+  <!-- Accent Elements -->
+  <g opacity="0.6">
+    <!-- Top Right Spark -->
+    <path d="M 650 40 L 660 30 L 670 40 L 660 50 Z" fill="url(#accentGradient)" />
+    <!-- Bottom Left Spark -->
+    <path d="M 150 160 L 140 170 L 150 180 L 160 170 Z" fill="url(#accentGradient)" />
+  </g>
+  
+  <!-- Connection Lines -->
+  <g stroke="url(#accentGradient)" stroke-width="2" stroke-dasharray="5,3" opacity="0.7">
+    <path d="M 300 100 L 375 100" />
+    <path d="M 425 100 L 500 100" />
+  </g>
+</svg>
